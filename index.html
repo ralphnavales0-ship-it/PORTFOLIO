@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ralph Andrei Navales — Web Developer</title>
+
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       PARTICLE BACKGROUND
+  ══════════════════════════════ -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ══════════════════════════════
+       LOADER
+  ══════════════════════════════ -->
+  <div id="loader">
+    <div class="loader-text"></div>
+    <h1 class="hero-name">
+        <br><span>WELCOME</span>
+        </h1>
+  </div>
+
+  <!-- ══════════════════════════════
+       NAVIGATION
+  ══════════════════════════════ -->
+  <nav id="nav">
+    <a href="#home" class="nav-logo">PORTFOLIO</a>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mob-link">Home</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+
+  <!-- ══════════════════════════════
+       SECTION 1 — HOME
+  ══════════════════════════════ -->
+  <section id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          Available for Work
+        </p>
+        <h1 class="hero-name">
+          Hi, I'm <br><span>Ralph Andrei Navales</span>
+        </h1>
+        <p class="hero-role">Frontend Web Developer</p>
+        <p class="hero-tagline">
+          I build clean, responsive, and interactive web applications —
+          turning ideas into polished digital experiences.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">
+            <i class="fa-solid fa-folder-open"></i> View Projects
+          </a>
+          <a href="#contact" class="btn-outline">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+          <a href="resume.pdf" download class="btn-outline">
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SECTION 2 — ABOUT
+  ══════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Left: Avatar -->
+        <div class="about-image-wrap reveal">
+          <div class="about-frame">
+            <img src="pic.jpg" alt="Ralph Andrei Navales" class="about-avatar-img"/>
+          </div>
+          <div class="about-badge">
+            <strong>2+</strong>
+            <small>Years Coding</small>
+          </div>
+          <div class="about-corner"></div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="about-text">
+          <p class="section-label reveal">Who I Am</p>
+          <h2 class="section-title reveal">
+            Passionate about <br><span>building for the web</span>
+          </h2>
+          <div class="divider reveal"></div>
+
+          <p class="reveal">
+            Hi! I'm Ralph, a Information Technology student with a love for crafting
+            elegant, user-focused web applications. I thrive at the intersection
+            of design and engineering — turning complex problems into intuitive,
+            beautiful solutions.
+          </p>
+          <p class="text-muted reveal">
+           When I'm not coding, I like to relax by playing mobile games or going outside
+           to play basketball. It helps me enjoy my free time and stay active.
+          </p>
+
+          <div class="about-stats reveal">
+            <div class="stat-box">
+              <strong>0</strong>
+              <span>Projects Built</span>
+            </div>
+            <div class="stat-box">
+              <strong>5+</strong>
+              <span>Technologies</span>
+            </div>
+            <div class="stat-box">
+              <strong>3rd</strong>
+              <span>Year Student</span>
+            </div>
+          </div>
+
+          <div class="edu-list reveal">
+            <div class="edu-item">
+              <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h4>B.S. in Information Technology</h4>
+                <p>STI College Naga</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+              <div>
+                <h4>Responsive Web Design Certification</h4>
+                <p>freeCodeCamp · 2023</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-icon"><i class="fa-solid fa-award"></i></div>
+              <div>
+                <h4>NC2 Passer</h4>
+                <p>2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SECTION 3 — PROJECTS
+  ══════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label reveal">My Work</p>
+      <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+      <p class="section-subtitle reveal">
+        A curated selection showcasing my skills across design, development, and problem-solving.
+      </p>
+
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="ui">UI/UX</button>
+        <button class="filter-btn" data-filter="tool">Tools</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-thumb thumb-1">
+            <div class="thumb-emoji">🛒</div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Live Demo</a>
+              <a href="#" class="overlay-btn ghost">GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Web App</span>
+            <h3>ShopEase — E-Commerce Platform</h3>
+            <p>A full-featured online store with cart management, product filtering, and a responsive checkout flow.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">LocalStorage</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="tool">
+          <div class="project-thumb thumb-2">
+            <div class="thumb-emoji">🌤️</div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Live Demo</a>
+              <a href="#" class="overlay-btn ghost">GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Tool</span>
+            <h3>WeatherNow — Weather Dashboard</h3>
+            <p>Real-time weather app with OpenWeather API, 5-day forecasts, and geolocation support.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">REST API</span>
+              <span class="tech-pill">CSS Grid</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ui">
+          <div class="project-thumb thumb-3">
+            <div class="thumb-emoji">✅</div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Live Demo</a>
+              <a href="#" class="overlay-btn ghost">GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">UI/UX</span>
+            <h3>Taskly — Kanban Task Manager</h3>
+            <p>Drag-and-drop Kanban board with priority labels, deadline tracking, and local persistence.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">Vanilla JS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-thumb thumb-4">
+            <div class="thumb-emoji">📊</div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Live Demo</a>
+              <a href="#" class="overlay-btn ghost">GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Web App</span>
+            <h3>FinTrack — Budget Tracker</h3>
+            <p>Personal finance dashboard with interactive charts, categories, and monthly summaries.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Chart.js</span>
+              <span class="tech-pill">CSS Variables</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="tool">
+          <div class="project-thumb thumb-5">
+            <div class="thumb-emoji">🎮</div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Play Now</a>
+              <a href="#" class="overlay-btn ghost">GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Mini Game</span>
+            <h3>PixelQuiz — JS Quiz Game</h3>
+            <p>Timed quiz game with score tracking, animations, and leaderboard via localStorage.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">Vanilla JS</span>
+              <span class="tech-pill">Canvas API</span>
+              <span class="tech-pill">LocalStorage</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ui">
+          <div class="project-thumb thumb-6">
+            <div class="thumb-emoji">🌿</div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn">Live Demo</a>
+              <a href="#" class="overlay-btn ghost">GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">UI/UX</span>
+            <h3>GreenLeaf — Plant Shop UI</h3>
+            <p>Scroll-driven landing page with parallax effects and intersection observer animations.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS Animations</span>
+              <span class="tech-pill">JS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SECTION 4 — SKILLS
+  ══════════════════════════════ -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label reveal">My Arsenal</p>
+      <h2 class="section-title reveal">Skills & <span>Technologies</span></h2>
+      <div class="divider reveal"></div>
+
+      <div class="skills-layout">
+
+        <!-- Progress Bars -->
+        <div class="skill-bars-wrap reveal">
+          <h3 class="skills-sub-title">Proficiency Level</h3>
+          <div class="skill-bars">
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>HTML & CSS</span><span>92%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="92"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>JavaScript</span><span>80%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>React</span><span>70%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>PHP</span><span>40%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="40"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Database</span><span>30%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="30"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>GitHub</span><span>85%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>VS Code</span><span>85%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Figma</span><span>20%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="20"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Icon Chips -->
+        <div class="skill-chips-wrap reveal">
+
+          <div class="skill-category">
+            <p class="skill-cat-label">Frontend</p>
+            <div class="chips-grid">
+              <div class="chip"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+              <div class="chip"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+              <div class="chip"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+              <div class="chip"><i class="fa-brands fa-react"></i><span>React</span></div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <p class="skill-cat-label">Database</p>
+            <div class="chips-grid">
+              <div class="chip"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <p class="skill-cat-label">Backend</p>
+            <div class="chips-grid">
+              <div class="chip"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <p class="skill-cat-label">Tools</p>
+            <div class="chips-grid">
+              <div class="chip"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+              <div class="chip"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+              <div class="chip"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SECTION 5 — CONTACT
+  ══════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label reveal">Let's Talk</p>
+      <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+      <p class="section-subtitle reveal">
+        I'm always open to new opportunities, collaborations, or a conversation about web development.
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>ralphnavales0@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Zone 4, Del Rosario, Pili, Camarines Sur</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon status-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <div>
+              <h4>Status</h4>
+              <p class="status-open">Open to opportunities</p>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <p class="social-label">Find me on</p>
+            <div class="social-links">
+              <a href="https://github.com/ralphnavales" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/ralphy_hshs?igsh=MWlzdDg1a2Nxc2FqNA==" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/ralphandrei.navales.5" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" action="https://formsubmit.co/ralphnavales0@gmail.com" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Juan" required/>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="lname" placeholder="dela Cruz" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address *</label>
+              <input type="email" id="femail" name="email" placeholder="juan@example.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?"/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="Tell me about your project or idea..."
+                required maxlength="500"></textarea>
+              <p class="char-count"><span id="charCount">0</span> / 500</p>
+            </div>
+            <input type="hidden" name="_captcha" value="false"/>
+            <input type="hidden" name="_next" value="./"/>
+            <button type="submit" class="btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer id="footer">
+    <span class="footer-logo">PORTFOLIO.</span>
+    <p class="footer-copy">© 2026 Ralph Andrei Navales. Built with HTML, CSS & JavaScript.</p>
+    <a href="#home" class="back-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
