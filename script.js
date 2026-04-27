@@ -1,18 +1,16 @@
 /* ═══════════════════════════════════════════════════════════
    PORTFOLIO — script.js
    Sections:
-     1. Loader
-     2. Theme Toggle (Dark / Light)
-     3. Navigation — scroll behaviour + active link
-     4. Hamburger / Mobile Menu
-     5. Scroll Reveal
-     6. Skill Bars (animate on scroll)
-     7. Project Filter
-     8. Contact Form (validation + char count)
+     1. Theme Toggle (Dark / Light)
+     2. Navigation — scroll behaviour + active link
+     3. Hamburger / Mobile Menu
+     4. Scroll Reveal
+     5. Skill Bars (animate on scroll)
+     6. Project Filter
+     7. Contact Form (validation + char count)
 ═══════════════════════════════════════════════════════════ */
 
 /* ─── Grab elements once ─────────────────────────────────── */
-const loader       = document.getElementById('loader');
 const nav          = document.getElementById('nav');
 const themeToggle  = document.getElementById('themeToggle');
 const themeIcon    = document.getElementById('themeIcon');
@@ -30,17 +28,7 @@ const msgTextarea  = document.getElementById('message');
 const charCountEl  = document.getElementById('charCount');
 
 /* ═══════════════════════════════════════════════════════════
-   1. LOADER
-   Hide the loading screen once the page assets are ready.
-═══════════════════════════════════════════════════════════ */
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    loader.classList.add('hidden');
-  }, 1200);
-});
-
-/* ═══════════════════════════════════════════════════════════
-   2. THEME TOGGLE — Dark / Light Mode
+   1. THEME TOGGLE — Dark / Light Mode
    Persists preference to localStorage.
 ═══════════════════════════════════════════════════════════ */
 let currentTheme = localStorage.getItem('portfolio-theme') || 'dark';
